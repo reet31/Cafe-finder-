@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Cafe Finder</title>
+
+  <link rel="stylesheet" href="style.css">
+
+  <link rel="stylesheet" href="https://unpkg.com/leaflet/dist/leaflet.css"/>
+
+
+  <script src="https://unpkg.com/leaflet/dist/leaflet.js"></script>
+
+  <script src="main.js" defer></script>
+</head>
+<body>
+  <header>
+    <h1>Cafe Finder</h1>
+  </header>
+  <main>
+    <section id="search-section">
+      <input type="text" id="location-input" placeholder="Enter location">
+      <button id="search-button">Search Cafes</button>
+    </section>
+
+
+    <section>
+      <h2>Map View</h2>
+      <div id="map"> </div>
+    </section>
+
+    <section id="results-section">
+      <h2>Nearby Cafes</h2>
+      <ul id="cafe-list"></ul>
+    </section>
+  </main>
+  <footer>
+    <p>&copy; 2024 Cafe Finder</p>
+  </footer>
+</body>
+</html>

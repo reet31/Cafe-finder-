@@ -1,0 +1,157 @@
+/* ===== Reset & Base Styles ===== */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Segoe UI", Roboto, Arial, sans-serif;
+}
+
+body {
+  background: #f9f9f9;
+  color: #333;
+  line-height: 1.6;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+/* ===== Header ===== */
+header {
+  background: linear-gradient(135deg, #ff7e5f, #feb47b);
+  padding: 20px;
+  text-align: center;
+  color: white;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.15);
+}
+
+header h1 {
+  font-size: 2rem;
+  letter-spacing: 1px;
+  font-weight: bold;
+}
+
+/* ===== Search Section ===== */
+#search-section {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  padding: 20px;
+  background: #fff;
+  border-bottom: 1px solid #ddd;
+}
+
+#location-input {
+  padding: 12px 15px;
+  width: 280px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  transition: all 0.3s ease;
+  font-size: 1rem;
+}
+
+#location-input:focus {
+  border-color: #ff7e5f;
+  outline: none;
+  box-shadow: 0 0 6px rgba(255,126,95,0.4);
+}
+
+#search-button {
+  padding: 12px 18px;
+  background: linear-gradient(135deg, #ff7e5f, #feb47b);
+  color: white;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  font-weight: bold;
+  transition: transform 0.2s ease, background 0.3s ease;
+}
+
+#search-button:hover {
+  transform: scale(1.05);
+  background: linear-gradient(135deg, #ff9966, #ff5e62);
+}
+
+/* ===== Map Section ===== */
+#map {
+  height: 400px;
+  margin: 20px auto;
+  border-radius: 12px;
+  box-shadow: 0 6px 15px rgba(0,0,0,0.1);
+  max-width: 95%;
+}
+
+/* ===== Cafe Results Section ===== */
+#results-section {
+  padding: 20px;
+  background: #fff;
+  margin: 20px auto;
+  border-radius: 12px;
+  max-width: 900px;
+  box-shadow: 0 6px 15px rgba(0,0,0,0.08);
+}
+
+#results-section h2 {
+  text-align: center;
+  margin-bottom: 20px;
+  color: #ff5e62;
+}
+
+#cafe-list {
+  list-style: none;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+  gap: 20px;
+  padding: 0;
+}
+
+#cafe-list li {
+  background: #fdfdfd;
+  padding: 15px;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+  transition: transform 0.2s ease, box-shadow 0.3s ease;
+  text-align: center;
+}
+
+#cafe-list li:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 20px rgba(0,0,0,0.15);
+}
+
+#cafe-list img {
+  margin-top: 10px;
+  max-width: 100%;
+  border-radius: 10px;
+  transition: transform 0.3s ease;
+}
+
+#cafe-list li:hover img {
+  transform: scale(1.05);
+}
+
+#cafe-list p {
+  font-weight: bold;
+  font-size: 1.1rem;
+  color: #333;
+  margin-bottom: 8px;
+}
+
+/* ===== Footer ===== */
+footer {
+  background: #333;
+  color: #ddd;
+  text-align: center;
+  padding: 15px;
+  margin-top: auto;
+  font-size: 0.9rem;
+}
+
+footer p {
+  margin: 0;
+}
+.highlight {
+  border: 2px solid #ff5e62;
+  background: #fff5f5;
+  transition: all 0.3s ease;
+}
+
